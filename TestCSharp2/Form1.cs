@@ -24,6 +24,14 @@ namespace TestCSharp2
 
             textBox1.Text += $"{apple + " " + numA1.ToString() + "개의 총 가격은 " +(priceA1 * numA1) + "원 입니다." } \r\n";
 
+            textBox2.Text = "A2. \r\n";
+
+            string strNum = "15";
+            int numA2_1 = int.Parse(strNum);
+            int numA2_2 = 10;
+
+            textBox2.Text += $"{numA2_1 + "에 " + numA2_2 + "을 더하면 " + (numA2_1 + numA2_2) + "입니다."} \r\n";
+
         }
     }
 }
