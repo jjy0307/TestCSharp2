@@ -30,7 +30,7 @@ namespace TestCSharp2
             int numA2_1 = int.Parse(strNum);
             int numA2_2 = 10;
 
-            textBox2.Text += $"{numA2_1 + "에 " + numA2_2 + "을 더하면 " + (numA2_1 + numA2_2) + "입니다."} \r\n";
+            textBox2.Text += $"{numA2_1}에 {numA2_2}을 더하면 {numA2_1 + numA2_2}입니다. \r\n";
 
         }
     }
