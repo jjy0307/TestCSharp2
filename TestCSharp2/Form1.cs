@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -32,6 +33,35 @@ namespace TestCSharp2
 
             textBox2.Text += $"{numA2_1}에 {numA2_2}을 더하면 {numA2_1 + numA2_2}입니다. \r\n";
 
+            textBox3.Text = "A3. \r\n";
+
+            string productName = "노트북";
+            int priceA3 = 1200000;
+            float discount = 0.15f;
+            byte stock = 8;
+            bool isAvailable = stock >= 1;
+
+            double discounted = Math.Round(priceA3 * (1 - discount), 0);
+
+            if (isAvailable)
+            {
+                textBox1.Text += $"구매 가능: 할인 가격은 {discounted}원 입니다.";
+            }
+            else
+            {
+                textBox1.Text += "품절되었습니다.";
+            }
+
+            if (stock >= 5)
+            {
+                textBox2.Text += "여유 있음";
+            }
+            else
+            {
+                textBox2.Text += "소량 남음";
+            }
+
+            textBox3.Text += $"상품명: {productName}, 할인된 가격: {discounted}원, 재고: {stock}개";
         }
     }
 }
