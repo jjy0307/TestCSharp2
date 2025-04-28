@@ -22,7 +22,7 @@ namespace TestCSharp2
             int priceA1 = 1200;
             int numA1 = 5;
 
-            textBox1.Text += $"{apple + " " + numA1.ToString() + "개의 총 가격은 " +(priceA1 * numA1) + "원 입니다." } \r\n";
+            textBox1.Text += $"{apple} {numA1.ToString()}개의 총 가격은 {priceA1 * numA1}원 입니다. \r\n";
 
             textBox2.Text = "A2. \r\n";
 
