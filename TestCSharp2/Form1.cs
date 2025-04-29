@@ -52,8 +52,7 @@ namespace TestCSharp2
             //{
             //    textBox1.Text += "품절되었습니다.";
             //}
-            string resultMessage = (stock > 0) ? $"구매 가능: 할인 가격은 {discounted}원 입니다." : "품절되었습니다.";
-            textBox1.Text += resultMessage;
+            textBox1.Text += isAvailable ? $"구매 가능: 할인 가격은 {discounted}원 입니다." : "품절되었습니다.";
             //if (stock >= 5)
             //{
             //    textBox2.Text += "여유 있음";
